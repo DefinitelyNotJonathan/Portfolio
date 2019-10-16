@@ -1,16 +1,16 @@
 * {
 
 }
+html,body {
+  min-height:100%;
+}
 html {
   min-width: 100%;
-  min-height: 100%;
-  background-image: url('images/portfolio 8 copyflip.jpg');
+  background-image: url('images/img691.jpg');
   background-repeat:no-repeat;
-  background-size:100%; /*will need several breakpoints?*/
+  background-size:contain;
   background-position: 70% 100% ;
-  background-color:RGB(211,211,211);
-  /*can make a linear gradient after submitting wireframe
-  background-color: linear-gradient(direction, color-stop1, color-stop2, ...);*/
+  background-color: rgb(252,254,253);
 
   /*need to look at the line in the middle of the page. It's from background
   color and image*/
@@ -27,7 +27,7 @@ header {
 }
 
 #navBar {
-  background-color:RGB(211,211,211);
+
   width:100%;
   height:100%;
 }
@@ -35,13 +35,13 @@ header {
 h1 {
   margin:0;
   font-size:24px;
+  text-align:center;
 }
 
 ul {
   list-style: none;
   margin:0;
   padding:0;
-  height:auto;
 }
 
 li {
@@ -49,9 +49,9 @@ li {
   display:block;
 }
 
-/*li::before:not(:first-child) {
-  content: "|";
-}*/
+  #aboutMe::after {
+    content: "|";
+}
 
 #homeLink {
   width:100%;
@@ -92,4 +92,70 @@ font-size:30px;
 /*projects page*/
 .quizShot {
   width:100%;
+}
+
+/*breakpoints*/
+@media screen and (min-width:528px) {
+  .myName {
+    line-height:.5;
+    font-size:45px;
+  }
+  #jonathan {
+    margin-bottom:35px;
+    margin-left:30px;
+  }
+  #retchless {
+    margin-left:75px;
+  }
+  #headline {
+    font-size:20px;
+    margin-top:15px;
+    margin-left:15px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  #jonathan {
+    margin-bottom:35px;
+    margin-left:60px;
+  }
+  #retchless {
+    margin-left:105px;
+  }
+  #headline {
+    text-align:center;
+    font-size:20px;
+    margin-top:15px;
+    margin-left:40px;
+  }
+}
+@media screen and (min-width:1200px) {
+
+
+
+.myName {
+  text-align:center;
+  line-height:.5;
+  font-size: 70px;
+  margin-right:450px;
+
+}
+.bigLetter {
+  font-size:130px;
+}
+#headline {
+  float:right;
+  margin-top:40px;
+  margin-right:50px;
+}
+#jonathan {
+  margin-top:0;
+  margin-bottom:55px;
+}
+#retchless {
+  margin-left:185px;
+}
+li {
+  font-size:30px;
+}
 }
