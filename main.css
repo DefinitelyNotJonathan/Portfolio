@@ -48,6 +48,14 @@ li {
   display:block;
 }
 
+li::after:first-of-type {
+  content: "|";
+}
+
+#homeLink {
+  text-align:center;
+}
+
 .myName {
 margin:0;
 line-height:1.25;
@@ -77,11 +85,3 @@ font-size:30px;
 .quizShot {
   width:100%;
 }
-
-/*github page*/
-
-
-/*linkedin page*/
-
-
-/*contact page*/
