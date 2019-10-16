@@ -41,6 +41,7 @@ ul {
   list-style: none;
   margin:0;
   padding:0;
+  height:auto;
 }
 
 li {
@@ -48,12 +49,16 @@ li {
   display:block;
 }
 
-li::after:first-of-type {
+/*li::before:not(:first-child) {
   content: "|";
-}
+}*/
 
 #homeLink {
-  text-align:center;
+  width:100%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 15px;
 }
 
 .myName {
@@ -80,6 +85,9 @@ font-size:30px;
 }
 /*about me page*/
 
+#bio {
+  margin-top:30px;
+}
 
 /*projects page*/
 .quizShot {
