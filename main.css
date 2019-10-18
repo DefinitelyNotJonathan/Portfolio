@@ -100,6 +100,8 @@ font-size:30px;
   width:80%;
   margin-left: auto;
   margin-right: auto;
+  margin-top:30px;
+  font-size:18px;
 }
 #quizShot {
   width:100%;
@@ -171,6 +173,11 @@ font-size:30px;
   #quizShot {
     max-width: 50%;
   }
+  #projectsMain {
+    width:60%;
+    line-height:1.25;
+    font-size:20px;
+  }
 }
 @media screen and (min-width:1200px) {
 
@@ -209,5 +216,8 @@ font-size:30px;
     width:65%;
     line-height: 1.5;
     font-size:20px;
+  }
+  #projectsMain {
+    font-size:22px;
   }
 }
