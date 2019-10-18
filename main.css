@@ -1,6 +1,3 @@
-* {
-
-}
 html,body {
   min-height:100%;
 }
@@ -8,26 +5,20 @@ html {
   min-width: 100%;
   background-image: url('images/img691.jpg');
   background-repeat:no-repeat;
-  background-size:contain;
-  background-position: 70% 100% ;
+  background-size:cover;
+  background-position: 30% 110% ;
   background-color: rgb(252,254,253);
-
-  /*need to look at the line in the middle of the page. It's from background
-  color and image*/
 }
-body {
-
+#altMain {
+  text-align:center;
 }
 
 header {
   width:100%;
-  height:35px;
-  margin-top:15px;
-
+  height:20px;
 }
 
-#navBar {
-
+nav {
   width:100%;
   height:100%;
 }
@@ -49,21 +40,15 @@ li {
   display:block;
 }
 
-  #aboutMe::after {
+#aboutMe::after {
     content: "|";
 }
-
-#homeLink {
-  width:100%;
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
-  margin-bottom: 15px;
+#home::after {
+    content: "|";
 }
 
 .myName {
 margin:0;
-line-height:1.25;
 font-size:30px;
 }
 
@@ -73,32 +58,65 @@ font-size:30px;
 }
 
 #jonathan {
-  margin-top:30px;
+  margin-left:20px;
 }
 
 #retchless {
-  margin-left:40px;
+  margin-left:60px;
 }
 
 #headline {
   margin-top:0;
+  margin-left:8px;
 }
 /*about me page*/
 
 #bio {
   margin-top:30px;
+  width:80%;
+  display:inline-block;
+  text-align:center;
+  background-color:rgba(211,211,211,.5);
+  line-height:1.2
 }
 
+#altHd {
+  height:40px;
+}
+#altNav {
+  display:inline-block;
+  text-align:center;
+}
+.altLi {
+  float:none;
+  display:inline-block;
+  text-align:center;
+  font-size:24px;
+  margin-top:10px;
+}
 /*projects page*/
-.quizShot {
-  width:100%;
+#projectsMain {
+  text-align:center;
+  width:50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#quizShot {
+  max-width:50%;
+  object-fit:contain;
 }
 
 /*breakpoints*/
 @media screen and (min-width:528px) {
+  header {
+    height:45px;
+  }
   .myName {
     line-height:.5;
     font-size:45px;
+  }
+  .bigLetter {
+    font-size: 100px;
   }
   #jonathan {
     margin-bottom:35px;
@@ -106,15 +124,34 @@ font-size:30px;
   }
   #retchless {
     margin-left:75px;
+    margin-bottom:8px;
   }
   #headline {
     font-size:20px;
-    margin-top:15px;
-    margin-left:15px;
+    margin-left:125px;
+    text-align:center;
   }
-}
-
+  nav {
+    font-size:20px;
+  }
+  #projects {
+    padding-right:20px;
+  }
+  #bio {
+    width:75%;
+    line-height:1.5;
+    font-size:18px;
+  }
+  .altLi {
+    font-size:30px;
+  }
+  #quizShot {
+    max-width:40%;
+  }
 @media screen and (min-width:768px) {
+  .myName {
+    font-size:55px;
+  }
   #jonathan {
     margin-bottom:35px;
     margin-left:60px;
@@ -126,36 +163,51 @@ font-size:30px;
     text-align:center;
     font-size:20px;
     margin-top:15px;
-    margin-left:40px;
+    margin-left:90px;
+  }
+  #bio {
+    width:70%;
+  }
+  #quizShot {
+    max-width: 50%;
   }
 }
 @media screen and (min-width:1200px) {
 
+  html {
+    background-size:cover;
+    background-position: 50%, 100%
+  }
 
+  .myName {
+    text-align:center;
+    line-height:.5;
+    font-size: 70px;
+    margin-right:475px;
 
-.myName {
-  text-align:center;
-  line-height:.5;
-  font-size: 70px;
-  margin-right:450px;
+  }
+  .bigLetter {
+    font-size:130px;
+  }
+  #headline {
+    float:right;
+    margin-right:310px;
 
-}
-.bigLetter {
-  font-size:130px;
-}
-#headline {
-  float:right;
-  margin-top:40px;
-  margin-right:50px;
-}
-#jonathan {
-  margin-top:0;
-  margin-bottom:55px;
-}
-#retchless {
-  margin-left:185px;
-}
-li {
-  font-size:30px;
-}
+  }
+  #jonathan {
+    margin-top:0;
+    margin-bottom:45px;
+    margin-right:540px;
+  }
+  #retchless {
+    margin-left:145px;
+  }
+  li {
+    font-size:30px;
+  }
+  #bio {
+    width:65%;
+    line-height: 1.5;
+    font-size:20px;
+  }
 }
