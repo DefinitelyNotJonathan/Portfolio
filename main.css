@@ -182,9 +182,6 @@ font-size:30px;
     line-height:1.5;
     font-size:18px;
   }
-  .altLi {
-    font-size:24px;
-  }
   #quizShot {
     max-width:40%;
   }
@@ -221,9 +218,6 @@ font-size:30px;
   }
 }
 @media screen and (min-width:1200px) {
-  li {
-    font-size:32px;
-  }
   html {
     background-size:cover;
     background-position: 50%, 100%
