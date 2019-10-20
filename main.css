@@ -4,29 +4,38 @@
 html,body {
   min-height:100%;
 }
+
 html {
   min-width: 100%;
   background-image: url('images/img6911.jpg');
   background-repeat:no-repeat;
   background-size:cover;
-  background-position:bottom;
+  background-position:34% 0%;
   background-color: rgb(252,254,253);
 }
-
-header {
+header,nav, #quizShot {
   width:100%;
+}
+h1, #altMain, #altNav, .altLi, #projectsMain {
+  text-align:center;
+}
+#projectsMain, .myName, #bio {
+  font-family: 'Playfair Display', serif;
+}
+#headline, .altLi, li {
+  font-family: 'Fauna One', serif;
+}
+header {
   height:30px;
 }
 
 nav {
-  width:100%;
   height:100%;
 }
 
 h1 {
   margin:0;
   font-size:24px;
-  text-align:center;
 }
 
 ul {
@@ -40,34 +49,46 @@ li {
   float:right;
   display:block;
   font-size:24px;
-  font-family: 'Fauna One', serif;
-}
+  }
 a {
   text-decoration:none;
   color:black;
-  /*background-color:rgba(211,211,211,.5);*/
+}
+a:active {
+  text-transform:uppercase;
 }
 a:hover {
   text-transform: uppercase;
 }
+#bioLinks {
+  text-align:center;
+}
 .link {
-  background:none;
+  display:inline-block;
+  padding:3px;
+  background-color:rgba(96,157,160,.7);
+  border: 2px solid rgb(211,211,211);
+  border-radius:4%;
   font-weight:bold;
+  text-align:center;
 }
 #projects {
   margin-left:5px;
 }
 #aboutMe {
   margin-right:5px;
+  margin-left:5px;
+}
+#home {
+  margin-right:5px;
 }
 .myName {
 margin:0;
 font-size:30px;
-font-family: 'Playfair Display', serif;
 }
 .bigLetter {
   font-size:80px;
-  /*color: RGB(93,188,210);*/
+  color: RGB(74,120,107);
 }
 
 #jonathan {
@@ -80,56 +101,48 @@ font-family: 'Playfair Display', serif;
 
 #headline {
   margin-top:0;
-  margin-left:8px;
+  margin-left:12px;
   font-size:18px;
-  font-family: 'Fauna One', serif;
 }
 /*about me page*/
+#bio, #altNav, .altLi {
+  display:inline-block;
+}
 #altMain {
-  text-align:center;
   margin-top:20px;
 }
 #bio {
+  border:1px solid rgba(164,193,175,.7);
+  border-radius:2%;
+  text-align:left;
   margin-top:30px;
+  padding:10px;
   width:80%;
   font-size:18px;
-  display:inline-block;
-  text-align:center;
-  background-color:rgba(211,211,211,.7);
+  background-color:rgba(164,193,175,.7);
   line-height:1.2;
-  font-family: 'Playfair Display', serif;
-}
+  }
 
 #altHd {
   height:80px;
 }
-#altNav {
-  display:inline-block;
-  text-align:center;
-}
 .altLi {
   float:none;
-  display:inline-block;
-  text-align:center;
   font-size:24px;
   margin-top:10px;
-  font-family: 'Fauna One', serif;
-}
+  }
 /*projects page*/
 #projectsMain {
-  text-align:center;
+  border:1px solid rgba(164,193,175,.7);
+  border-radius:2%;
   width:90%;
   margin-left: auto;
   margin-right: auto;
   margin-top:20px;
+  padding:10px;
   font-size:18px;
-  background-color:rgba(211,211,211,.5);
-  font-family: 'Playfair Display', serif;
-}
-#quizShot {
-  width:100%;
-
-}
+  background-color:rgba(164,193,175,.7);
+  }
 
 /*breakpoints*/
 @media screen and (min-width:528px) {
@@ -152,7 +165,7 @@ font-family: 'Playfair Display', serif;
   }
   #retchless {
     margin-left:75px;
-    margin-bottom:8px;
+    margin-bottom:25px;
   }
   #headline {
     font-size:20px;
@@ -184,6 +197,7 @@ font-family: 'Playfair Display', serif;
     font-size:55px;
   }
   #jonathan {
+    margin-top:20px;
     margin-bottom:35px;
     margin-left:60px;
   }
@@ -191,7 +205,6 @@ font-family: 'Playfair Display', serif;
     margin-left:105px;
   }
   #headline {
-    text-align:center;
     font-size:28px;
     margin-top:15px;
     margin-left:90px;
@@ -209,8 +222,8 @@ font-family: 'Playfair Display', serif;
   }
 }
 @media screen and (min-width:1200px) {
-  li {
-    font-size:40px;
+  header {
+    padding-top:10px;
   }
   html {
     background-size:cover;
@@ -218,27 +231,25 @@ font-family: 'Playfair Display', serif;
   }
 
   .myName {
-    text-align:center;
+    text-align:left;
     line-height:.5;
     font-size: 70px;
-    margin-right:475px;
-
   }
   .bigLetter {
     font-size:130px;
   }
   #headline {
-    float:right;
-    margin-right:310px;
+    margin-left:110px;
     font-size:32px;
   }
   #jonathan {
     margin-top:0;
     margin-bottom:45px;
-    margin-right:540px;
+    margin-left:150px;
+
   }
   #retchless {
-    margin-left:145px;
+    margin-left:295px;
   }
   #bio {
     width:65%;
