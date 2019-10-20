@@ -72,8 +72,8 @@ background-color:grey;
 #projectsMain {
   text-align:center;
   width:80%;
+  height:300px;
   margin-left: auto;
   margin-right: auto;
   margin-top:30px;
-  font-size:18px;
 }
