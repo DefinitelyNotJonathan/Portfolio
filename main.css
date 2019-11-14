@@ -13,7 +13,7 @@ html {
   background-position:34% 0%;
   background-color: rgb(252,254,253);
 }
-header,nav, #quizShot {
+header,nav, #quizShot, #getLostShot {
   width:100%;
 }
 h1, #altMain, #altNav, .altLi, #projectsMain {
@@ -182,7 +182,7 @@ font-size:30px;
     line-height:1.5;
     font-size:18px;
   }
-  #quizShot {
+  #quizShot, #getLostShot{
     max-width:40%;
   }
 @media screen and (min-width:768px) {
@@ -208,7 +208,7 @@ font-size:30px;
   #bio {
     width:70%;
   }
-  #quizShot {
+  #quizShot, #getLostShot {
     max-width: 50%;
   }
   #projectsMain {
