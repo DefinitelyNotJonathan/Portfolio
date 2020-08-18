@@ -182,7 +182,7 @@ font-size:30px;
     line-height:1.5;
     font-size:18px;
   }
-  #quizShot, #getLostShot{
+  #quizShot, #getLostShot, #groupCheckShot, #randomRecipeshot {
     max-width:40%;
   }
 @media screen and (min-width:768px) {
@@ -208,7 +208,7 @@ font-size:30px;
   #bio {
     width:70%;
   }
-  #quizShot, #getLostShot {
+  #quizShot, #getLostShot, #groupCheckShot, #randomRecipeshot {
     max-width: 50%;
   }
   #projectsMain {
