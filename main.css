@@ -102,6 +102,7 @@ a:hover {
 }
 #projects {
   margin-left:5px;
+  margin-right:5px;
 }
 #aboutMe {
   margin-right:5px;
@@ -202,9 +203,6 @@ font-size:30px;
   }
   nav {
     font-size:20px;
-  }
-  #projects {
-    padding-right:20px;
   }
   #bio {
     width:75%;
