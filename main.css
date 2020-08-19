@@ -211,6 +211,7 @@ font-size:30px;
   #quizShot, #getLostShot, #groupCheckShot, #randomRecipeshot {
     max-width:40%;
   }
+}
 @media screen and (min-width:768px) {
   header {
     padding-top:10px;
