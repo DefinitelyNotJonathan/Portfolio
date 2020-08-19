@@ -19,7 +19,7 @@ header,nav, #quizShot, #getLostShot {
 h1, #altMain, #altNav, .altLi, #projectsMain {
   text-align:center;
 }
-#projectsMain, .myName, #bio {
+#projectsMain, .myName, #bio, #contact, #bioIndex {
   font-family: 'Playfair Display', serif;
 }
 #headline, .altLi, li {
@@ -64,6 +64,19 @@ a:hover {
   text-align:center;
 }
 #bioIndex {
+  text-align:center;
+  border:1px solid rgba(164,193,175,.7);
+  border-radius:2%;
+  margin-top:30px;
+  padding:15px;
+  width:80%;
+  font-size:18px;
+  background-color:rgba(164,193,175,.7);
+  line-height:1.2;
+  margin-left: auto;
+  margin-right: auto;
+}
+#contact {
   text-align:center;
   border:1px solid rgba(164,193,175,.7);
   border-radius:2%;
@@ -218,7 +231,7 @@ font-size:30px;
     margin-top:15px;
     margin-left:90px;
   }
-  #bio {
+  #bio, #bioIndex, #contact {
     width:70%;
   }
   #quizShot, #getLostShot, #groupCheckShot, #randomRecipeshot {
@@ -259,14 +272,12 @@ font-size:30px;
   #retchless {
     margin-left:295px;
   }
-  #bio {
+  #bio, #bioIndex, #contact {
     width:65%;
     line-height: 1.5;
-    font-size:20px;
+    font-size:22px;
   }
-  #bioIndex {
-    font-size: 22px;
-  }
+
   #projectsMain {
     font-size:22px;
   }
